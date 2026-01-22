@@ -1,8 +1,7 @@
 import GroceryItem from "./GroceryItem";
+import { Tag } from "lucide-react";
 
-export default function RecipeGroup(recipeName, items, onDeleteItem) {
-  const { Tag } = require("lucide-react");
-
+export default function RecipeGroup({ recipeName, items, onDeleteItem }) {
   return (
     <div className="border border-gray-200 rounded-lg overflow-hidden">
       <div className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white px-4 py-2">

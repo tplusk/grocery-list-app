@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-
+import { ShoppingCart } from "lucide-react";
 import "./App.css";
 import RecipeManager from "./components/RecipeManager";
+import AdditemForm from "./components/AddItemForm";
+import GroceryList from "./components/GroceryList";
+import ItemCounter from "./components/ItemCounter";
+import AddItemForm from "./components/AddItemForm";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -42,7 +46,9 @@ function App() {
             onDeleteRecipe={handleDeleteRecipe}
           />
 
-          <GroceryList items={items} onDeleteItem={onDeleteItem} />
+          <AddItemForm recipes={recipes} onAddItem={handleAddItem} />
+
+          <GroceryList items={items} onDeleteItem={handleDeleteItem} />
 
           <ItemCounter count={items.length} />
         </div>

@@ -1,6 +1,6 @@
-export default function GroceryItem(item, onDelete) {
-  const { Trash } = requier("lucide-react");
+import { Trash2 } from "lucide-react";
 
+export default function GroceryItem({ item, onDelete }) {
   return (
     <div className="flex items-center justify-between p-3 hover:bg-gray-50 transition">
       <div className="flex-1">
@@ -14,7 +14,7 @@ export default function GroceryItem(item, onDelete) {
         onClick={() => onDelete(item.id)}
         className="text-red-500 hover:text-red-700 transition"
       >
-        <Trash size={18} />{" "}
+        <Trash2 size={18} />{" "}
       </button>
     </div>
   );

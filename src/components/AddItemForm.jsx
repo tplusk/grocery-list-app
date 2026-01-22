@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { Plus } from "lucide-react";
 
 export default function AddItemForm({ recipes, onAddItem }) {
-  const { Plus } = require("lucide-react");
   const [newItem, setNewItem] = useState({
     name: "",
     quantity: "",
@@ -15,7 +15,7 @@ export default function AddItemForm({ recipes, onAddItem }) {
     "lb",
     "oz",
     "L",
-    "ml",
+    "mL",
     "cups",
     "tbsp",
     "tsp",
@@ -71,13 +71,13 @@ export default function AddItemForm({ recipes, onAddItem }) {
             </option>
           ))}
         </select>
+        <button
+          onClick={handleAddItem}
+          className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition flex items-center justify-center gap-2"
+        >
+          <Plus size={20} /> Add
+        </button>
       </div>
-      <button
-        onClick={handleAddItem}
-        className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition flex items-center justify-center gap-2"
-      >
-        <Plus size={20} /> Add
-      </button>
     </div>
   );
 }

@@ -1,3 +1,6 @@
+import { ShoppingCart } from "lucide-react";
+import RecipeGroup from "./RecipeGroup";
+
 export default function GroceryList({ items, onDeleteItem }) {
   const groupedItems = items.reduce((acc, item) => {
     const key = item.recipe || "Ungrouped";
@@ -16,7 +19,7 @@ export default function GroceryList({ items, onDeleteItem }) {
   }
 
   return (
-    <div>
+    <div className="space-y-4">
       {Object.entries(
         groupedItems.map(([recipeName, recipeItems]) => (
           <RecipeGroup

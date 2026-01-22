@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import { ShoppingCart } from "lucide-react";
+import RecipeList from "./RecipeList";
 
-export default function RecipeManager() {
+export default function RecipeManager({
+  recipes,
+  onAddRecipe,
+  onDeleteRecipe,
+}) {
   const [newRecipe, setNewRecipe] = useState("");
   const [showAddRecipe, setShowAddRecipe] = useState(false);
 
