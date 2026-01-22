@@ -23,6 +23,10 @@ function App() {
     setItems([...items, item]);
   };
 
+  const handleDeleteItem = (id) => {
+    setItems(items.filter((item) => item.id !== id));
+  };
+
   return <></>;
 }
 
