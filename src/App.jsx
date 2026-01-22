@@ -19,6 +19,10 @@ function App() {
     );
   };
 
+  const handleAddItem = (item) => {
+    setItems([...items, item]);
+  };
+
   return <></>;
 }
 
