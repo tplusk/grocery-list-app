@@ -396,34 +396,6 @@ Contributions are welcome! Please follow these steps:
 
 ## Troubleshooting
 
-### Items not appearing
-
-**Possible causes:**
-
-- All form fields must be filled (name, quantity, unit are required)
-- Verify state updates in React DevTools
-
-**Solution:**
-
-- Check console for errors
-- Ensure all required fields have values
-
----
-
-### Recipes not showing
-
-**Possible causes:**
-
-- Recipe name is not unique
-- Whitespace in recipe names
-
-**Solution:**
-
-- Use unique recipe names
-- Trim whitespace from input
-
----
-
 ### Styling issues
 
 **Possible causes:**
