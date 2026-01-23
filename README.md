@@ -90,18 +90,18 @@ grocery-list-app/
 ├── public/
 ├── src/
 │   ├── components/
-│   │   ├── AddItemForm.jsx      # Form for adding new items
-│   │   ├── GroceryItem.jsx      # Individual item component
-│   │   ├── GroceryList.jsx      # Main list container
-│   │   ├── ItemCounter.jsx      # Displays total item count
-│   │   ├── RecipeGroup.jsx      # Groups items by recipe
-│   │   ├── RecipeList.jsx       # Displays recipe tags
-│   │   ├── RecipeManager.jsx    # Recipe CRUD operations
-│   │   └── RecipeTag.jsx        # Individual recipe tag
-│   ├── App.jsx                  # Main application component
-│   ├── App.css                  # Application styles
-│   ├── index.css                # Global styles
-│   └── main.jsx                 # Application entry point
+│   │   ├── AddItemForm.jsx
+│   │   ├── GroceryItem.jsx
+│   │   ├── GroceryList.jsx
+│   │   ├── ItemCounter.jsx
+│   │   ├── RecipeGroup.jsx
+│   │   ├── RecipeList.jsx
+│   │   ├── RecipeManager.jsx
+│   │   └── RecipeTag.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
 ├── index.html
 ├── package.json
 ├── vite.config.js
