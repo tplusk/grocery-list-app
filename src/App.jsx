@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ShoppingCart } from "lucide-react";
 import "./App.css";
 import RecipeManager from "./components/RecipeManager";
-import AdditemForm from "./components/AddItemForm";
 import GroceryList from "./components/GroceryList";
 import ItemCounter from "./components/ItemCounter";
 import AddItemForm from "./components/AddItemForm";
@@ -33,7 +32,7 @@ function App() {
   };
 
   return (
-    <div className="min-h screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
           <div className="flex items-center gap-3 mb-6">
