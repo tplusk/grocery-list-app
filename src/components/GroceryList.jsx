@@ -20,16 +20,14 @@ export default function GroceryList({ items, onDeleteItem }) {
 
   return (
     <div className="space-y-4">
-      {Object.entries(
-        groupedItems.map(([recipeName, recipeItems]) => (
-          <RecipeGroup
-            key={recipeName}
-            recipeName={recipeName}
-            items={recipeItems}
-            onDeleteItem={onDeleteItem}
-          />
-        )),
-      )}
+      {Object.entries(groupedItems).map(([recipeName, recipeItems]) => (
+        <RecipeGroup
+          key={recipeName}
+          recipeName={recipeName}
+          items={recipeItems}
+          onDeleteItem={onDeleteItem}
+        />
+      ))}
     </div>
   );
 }
