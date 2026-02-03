@@ -37,20 +37,20 @@ export default function AddItemForm({ recipes, onAddItem }) {
           value={newItem.name}
           onChange={(e) => setNewItem({ ...newItem, name: e.target.value })}
           placeholder="Item name"
-          className="px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
         <input
           type="number"
           value={newItem.quantity}
           onChange={(e) => setNewItem({ ...newItem, quantity: e.target.value })}
           placeholder="Quantity"
-          className="px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
 
         <select
           value={newItem.unit}
           onChange={(e) => setNewItem({ ...newItem, unit: e.target.value })}
-          className="px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
         >
           <option value="">Select unit</option>
           {units.map((unit) => (
@@ -62,7 +62,7 @@ export default function AddItemForm({ recipes, onAddItem }) {
         <select
           value={newItem.recipe}
           onChange={(e) => setNewItem({ ...newItem, recipe: e.target.value })}
-          className="px-3 py-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
         >
           <option value="">No recipe</option>
           {recipes.map((recipe) => (
